@@ -74,6 +74,82 @@
   margin-bottom: 50px;
 }
 
+.page-header, .main-nav, .contacts, .container, .portfolio {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .page-header, .main-nav, .contacts, .container, .portfolio {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: tomato;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header, .main-nav, .contacts, .container, .portfolio {
+    max-width: 768px;
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header, .main-nav, .contacts, .container, .portfolio {
+    max-width: 1200px;
+    background-color: yellow;
+  }
+}
+
+.site-nav, .contacts, .skills, .team .team__scroll.list, .team .social-icons, .our-clients, .address__scroll.list, .portfolio__list, .portfolio__filter {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.section__title.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.primary, .filter__button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  color: #fff;
+  background-color: #2196f3;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  justify-content: center;
+}
+
+.section__title {
+  margin-top: 0;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 html {
   box-sizing: border-box;
 }
