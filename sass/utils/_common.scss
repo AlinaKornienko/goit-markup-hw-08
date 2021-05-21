@@ -1,0 +1,66 @@
+%container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: aqua;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: tomato;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-color: violet;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    background-color: yellow;
+  }
+}
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+%visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+%button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+}
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  justify-content: center;
+}
+%section__title {
+  margin-top: 0;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+%is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
