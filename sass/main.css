@@ -590,14 +590,29 @@ img {
 }
 
 .our-clients {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.our-clients____item {
-  width: 170px;
-  height: 92px;
+@media screen and (min-width: 480px) {
+  .our-clients {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .our-clients__position {

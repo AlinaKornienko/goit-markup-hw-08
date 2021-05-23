@@ -1,11 +1,32 @@
 .our-clients {
   @extend %list;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  &____item {
-    width: 170px;
-    height: 92px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    @media screen and (min-width: 480px) {
+      // width: 210px;
+      // height: 92px;
+    }
+    @media screen and (min-width: 768px) {
+      // width: 226px;
+      // height: 92px;
+    }
+    @media screen and (min-width: 1200px) {
+      // width: 170px;
+      // height: 92px;
+    }
   }
   &__position {
     display: flex;
