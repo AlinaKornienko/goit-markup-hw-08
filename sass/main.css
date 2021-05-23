@@ -482,6 +482,7 @@ img {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: 270px;
+    margin-right: 0;
   }
 }
 
@@ -491,15 +492,27 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .team__item:nth-child(2n) {
-    margin-right: 0;
+.team__about {
+  padding-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .team__about {
+    padding-bottom: 24px;
   }
 }
 
-.team__about {
-  padding: 30px;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .team__about {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__about {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {
