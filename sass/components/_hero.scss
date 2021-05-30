@@ -9,19 +9,13 @@
   background-size: cover;
   text-align: center;
   background-repeat: no-repeat;
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/main-page/desktop/img-hero.jpg);
-    background-size: cover;
-    text-align: center;
-    background-repeat: no-repeat;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main-page/desktop/img-hero.jpg);
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to right,
@@ -30,15 +24,15 @@
       ),
       url(../images/main-page/tablet/img-hero.jpg);
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/main-page/mobile/img-hero.jpg);
-  }
-  @media screen and(min-width:1200px) {
+      url(../images/main-page/desktop/img-hero.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
     height: 600px;
   }
   &__title {
