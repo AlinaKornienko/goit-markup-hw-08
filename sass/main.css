@@ -326,11 +326,15 @@ svg {
   background-color: #2f303a;
   background-size: cover;
   text-align: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/desktop/img-hero.jpg);
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
   }
 }
 
