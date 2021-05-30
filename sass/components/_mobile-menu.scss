@@ -145,6 +145,9 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: $title-text-color;
+    &.current {
+      color: $accent-color;
+    }
   }
   &__contacts {
     @extend %list;
