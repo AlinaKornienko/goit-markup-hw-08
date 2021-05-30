@@ -321,8 +321,8 @@ svg {
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
   background-size: cover;
   text-align: center;
@@ -335,6 +335,8 @@ svg {
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -435,13 +437,13 @@ svg {
 
 @media screen and (min-width: 768px) {
   .skills__item {
-    flex-basis: calc((100% - 2 * 15px) / 2);
+    flex-basis: calc((100% - 2 * 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .skills__item {
-    flex-basis: calc((100% - 4 * 15px) / 4);
+    flex-basis: calc((100% - 4 * 30px) / 4);
     margin-bottom: 0;
   }
 }
@@ -548,13 +550,13 @@ svg {
 
 @media screen and (min-width: 768px) {
   .team__item {
-    flex-basis: calc((100% - 2 * 15px) / 2);
+    flex-basis: calc((100% - 2 * 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
-    flex-basis: calc((100% - 4 * 15px) / 4);
+    flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }
 
@@ -818,6 +820,7 @@ svg {
     width: 1200px;
     display: flex;
     justify-content: space-between;
+    text-align: start;
   }
 }
 
@@ -1179,6 +1182,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin-left: -30px;
+  }
+}
+
 .portfolio__item {
   position: relative;
   overflow: hidden;
@@ -1186,13 +1195,15 @@ svg {
 
 @media screen and (min-width: 768px) {
   .portfolio__item {
-    flex-basis: calc((100% - 2 * 15px) / 2);
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio__item {
-    flex-basis: calc((100% - 3 * 15px) / 3);
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin-left: 30px;
   }
 }
 
@@ -1353,8 +1364,6 @@ svg {
 }
 
 .modal-form {
-  width: 450px;
-  height: 609px;
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -1472,7 +1481,7 @@ svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
+  min-width: 450px;
   min-height: 581px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
