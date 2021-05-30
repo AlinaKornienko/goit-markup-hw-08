@@ -330,19 +330,19 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-page/desktop/img-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/desktop/img-hero.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-page/tablet/img-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/tablet/img-hero.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/main-page/mobile/img-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/mobile/img-hero.jpg);
   }
 }
 
@@ -1633,16 +1633,21 @@ svg {
   left: 0;
   opacity: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 48px 40px;
-  background-color: #fff;
   transition: 0.5s;
-  z-index: 99;
+  background-color: #fff;
+  visibility: hidden;
 }
 
 .mobile-menu.is-open {
-  opacity: 1;
-  overflow: hidden;
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu.is-open {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1670,18 +1675,6 @@ svg {
 
 .mobile-menu__contacts {
   margin-bottom: 64px;
-}
-
-.is-open .menu-btn__icon-open {
-  display: none;
-}
-
-.menu-btn__icon-close {
-  display: none;
-}
-
-.is-open .menu-btn__icon-close {
-  display: block;
 }
 
 .mobile-contacts__link {
@@ -1727,19 +1720,51 @@ svg {
 
 .mobile-menu__btn {
   justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
   padding: 0;
   background-color: transparent;
   border: none;
+  margin-left: auto;
   cursor: pointer;
+  z-index: 81;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: (767, 98px)) {
   .mobile-menu__btn {
     display: none;
   }
+}
+
+.mobile-menu__btn.is-open {
+  display: block;
+}
+
+.mobile-menu__btn.is-open .menu-btn__icon-open {
+  display: none;
+}
+
+.mobile-menu__btn.is-open .menu-btn__icon-close {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn.is-open .menu-btn__icon-close {
+    display: block;
+  }
+}
+
+.mobile-menu:hover, .mobile-menu:focus {
+  fill: #2196f3;
+}
+
+.menu-btn__icon-close {
+  display: none;
+  top: 0;
+}
+
+.is-open .menu-btn__icon-close {
+  display: block;
 }
 
 .menu-btn__icon {
