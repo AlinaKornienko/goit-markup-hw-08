@@ -1679,7 +1679,7 @@ svg {
   flex-direction: column;
   z-index: 19;
   width: 100%;
-  max-width: 450px;
+  max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
   background-color: #fff;
@@ -1693,13 +1693,13 @@ svg {
   opacity: 1;
 }
 
+.mobile-menu__list {
+  margin-bottom: 64px;
+}
+
 .mobile-menu .mobile-menu__list {
   flex-direction: column;
   font-size: 18px;
-}
-
-.mobile-menu .mobile-menu__item {
-  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1709,10 +1709,10 @@ svg {
 }
 
 .mobile-menu__list {
-  margin-bottom: 32px;
+  margin-bottom: 200px;
 }
 
-.mobile-menu__item {
+.mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
