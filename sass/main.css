@@ -513,7 +513,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .skills__item {
-    flex-basis: calc((100% - 4 * 30px) / 4);
+    flex-basis: calc((100% - 4 * 22px) / 4);
     margin-bottom: 0;
   }
 }
@@ -626,7 +626,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .team__item {
-    flex-basis: calc((100% - 4 * 15px) / 4);
+    flex-basis: calc((100% - 4 * 22px) / 4);
   }
 }
 
@@ -642,6 +642,7 @@ svg {
 }
 
 .team__scroll {
+  display: flex;
   flex-basis: 100%;
 }
 
