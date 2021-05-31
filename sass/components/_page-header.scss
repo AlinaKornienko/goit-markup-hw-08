@@ -35,6 +35,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  height: 60px;
 }
 .main-nav {
   @extend %container;
