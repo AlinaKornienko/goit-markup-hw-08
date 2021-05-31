@@ -47,9 +47,11 @@
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-      flex-wrap: inherit;
-      justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      // flex-basis: calc((100% - 4 * 15px) / 4);
     }
   }
   &__item:not(:last-child) {
