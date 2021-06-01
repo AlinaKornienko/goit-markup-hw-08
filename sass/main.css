@@ -1472,6 +1472,7 @@ svg {
   background-color: #fff;
   transition: right 0.5s;
   opacity: 0;
+  pointer-events: none;
 }
 
 .mobile-menu.is-open {

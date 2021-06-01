@@ -5,6 +5,7 @@
   height: 40px;
   background-color: transparent;
   border: none;
+  pointer-events: none;
   &:hover,
   &:focus {
     fill: $accent-color;
